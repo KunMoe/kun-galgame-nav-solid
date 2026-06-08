@@ -1,0 +1,42 @@
+# kun-galgame-nav — PRODUCTION compose (Dokploy + GHCR prebuilt image).
+#
+# Same conventions as kun-galgame-infra/docker-compose.prod.yml:
+#   1. `image: ghcr.io/kunmoe/kun-galgame-nav` — NOT `build:`. CI builds+pushes; Dokploy PULLS.
+#   2. `expose:` (container-network only) not `ports:` — Traefik routes internally.
+#   3. network = `dokploy-network` (external) — shared with the other Dokploy apps.
+#
+# This is a stateless static-ish SSR frontend: no DB, no secrets, no env to set.
+# Just attach the domain `nav.kungal.org` → service `web` : port 3000 in the
+# Dokploy app's Domains tab (Traefik auto-issues the Let's Encrypt cert).
+#
+#   docker compose -f docker-compose.prod.yml pull
+#   docker compose -f docker-compose.prod.yml up -d
+name: kun-galgame-nav
+
+services:
+  web:
+    image: ghcr.io/kunmoe/kun-galgame-nav:latest
+    pull_policy: always
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "3000"
+    expose: ["3000"]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('net').connect(3000,'127.0.0.1').on('connect',()=>process.exit(0)).on('error',()=>process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    restart: unless-stopped
+
+networks:
+  default:
+    name: dokploy-network
+    external: true

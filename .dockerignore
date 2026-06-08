@@ -1,0 +1,23 @@
+# Keep the build context small & reproducible — the deps stage installs
+# node_modules itself, and the build stage generates .output / .vinxi.
+node_modules
+.output
+.vinxi
+.solid
+.vercel
+.netlify
+dist
+
+.git
+.github
+.vscode
+.idea
+
+*.log
+.DS_Store
+Thumbs.db
+
+# Docs / meta are not needed inside the image
+docs
+README.md
+docs/README_zh_cn.md
