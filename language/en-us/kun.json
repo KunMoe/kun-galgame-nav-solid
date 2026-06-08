@@ -2,6 +2,7 @@
   "title": "KUN Visual Novel Navigation Page",
   "lightMode": "Light Mode",
   "darkMode": "Dark Mode",
+  "systemMode": "Follow System",
   "main": "Main Websites",
   "sub": "Subsites",
   "about": "About",

@@ -1,34 +1,41 @@
 import { createMemo } from 'solid-js'
-import { A } from '@solidjs/router'
-import { useAppState } from '~/AppContext'
+import { Title } from '@solidjs/meta'
+import { KunCard } from '~/components/kun/KunCard'
+import { KunLink } from '~/components/kun/KunLink'
+import { useI18n } from '~/i18n'
 
-const ErrorPage = () => {
-  const context = useAppState()
-  const { t } = context
+const randomNum = (min: number, max: number) =>
+  Math.floor(Math.random() * (max - min + 1)) + min
 
-  const randomNum = (min: number, max: number) =>
-    Math.floor(Math.random() * (max - min + 1)) + min
-  const randomPackIndex = randomNum(1, 5)
-  const randomStickerIndex = randomNum(1, 80)
-  const stickerLink = createMemo(
-    () =>
-      `https://sticker.kungal.com/stickers/KUNgal${randomPackIndex}/${randomStickerIndex}.webp`
-  )
+export default function NotFound() {
+  const { t, localePath } = useI18n()
+
+  const stickerLink = createMemo(() => {
+    const pack = randomNum(1, 5)
+    const sticker = randomNum(1, 80)
+    return `https://sticker.kungal.com/stickers/KUNgal${pack}/${sticker}.webp`
+  })
 
   return (
-    <div class="flex flex-col h-full min-h-[calc(100vh-75px)] max-w-4xl mx-auto">
-      <div class="m-auto p-4 flex flex-col items-center bg-opacity-50 bg-white rounded-lg shadow-lg">
-        <h1 class="text-kun-red text-4xl font-medium">404</h1>
-        <img src={stickerLink()} class="my-4" />
-        <p class="text-center text-kun-red text-xl font-bold mb-4">
-          {t('kun.404')}
-        </p>
-        <A href="/" class="text-kun-blue5-light">
+    <main class="flex min-h-[calc(100lvh-4rem)] items-center justify-center p-4">
+      <Title>404</Title>
+      <KunCard
+        color="ren"
+        isTransparent={false}
+        class="w-full max-w-md items-center text-center"
+        contentClass="items-center gap-4"
+      >
+        <h1 class="text-ren text-5xl font-bold">404</h1>
+        <img
+          src={stickerLink()}
+          alt="404"
+          class="size-40 object-contain"
+        />
+        <p class="text-default-700 text-lg font-medium">{t('kun.404')}</p>
+        <KunLink to={localePath('/')} color="kun" underline="hover">
           {t('kun.remake')}
-        </A>
-      </div>
-    </div>
+        </KunLink>
+      </KunCard>
+    </main>
   )
 }
-
-export default ErrorPage

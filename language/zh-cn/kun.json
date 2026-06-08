@@ -2,6 +2,7 @@
   "title": "鲲 Galgame 导航页",
   "lightMode": "白天模式",
   "darkMode": "黑夜模式",
+  "systemMode": "跟随系统",
   "main": "主站",
   "sub": "子网站",
   "about": "关于",

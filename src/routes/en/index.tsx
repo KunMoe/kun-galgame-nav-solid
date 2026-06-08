@@ -1,5 +1,5 @@
 import Home from '~/components/home/Home'
 
-export default function Index() {
+export default function EnIndex() {
   return <Home />
 }
