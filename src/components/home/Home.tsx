@@ -56,7 +56,8 @@ const subSites: KunSite[] = [
   },
   {
     key: 'kunui',
-    link: 'https://ui.kungal.com'
+    link: 'https://ui.kungal.com',
+    githubLink: 'https://github.com/kungal/kun-ui'
   },
   {
     key: 'down',
