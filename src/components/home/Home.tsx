@@ -9,6 +9,9 @@ type SiteKey =
   | 'backup'
   | 'sticker'
   | 'documents'
+  | 'oauth'
+  | 'wiki'
+  | 'kunui'
   | 'down'
   | 'nav'
 
@@ -28,8 +31,7 @@ const mainSites: KunSite[] = [
   {
     key: 'backup',
     link: 'https://www.kungal.org',
-    githubLink: 'https://github.com/KUN1007/kun-galgame-nuxt3',
-    important: true
+    githubLink: 'https://github.com/KUN1007/kun-galgame-nuxt3'
   }
 ]
 
@@ -41,8 +43,20 @@ const subSites: KunSite[] = [
   },
   {
     key: 'documents',
-    link: 'https://soft.moe/kun-visualnovel-docs/kun-forum.html',
+    link: 'https://docs.kungal.nextmoe.dev',
     githubLink: 'https://github.com/KUN1007/soft.moe'
+  },
+  {
+    key: 'oauth',
+    link: 'https://oauth.kungal.com/'
+  },
+  {
+    key: 'wiki',
+    link: 'https://wiki.kungal.com/'
+  },
+  {
+    key: 'kunui',
+    link: 'https://ui.kungal.com'
   },
   {
     key: 'down',

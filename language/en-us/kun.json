@@ -15,8 +15,8 @@
     "details": "The cutest Visual Novel forum in the world! Currently the most advanced Visual Novel resource site in the world! No ads forever! Free forever! Visual Novel downloads, Visual Novel resource site."
   },
   "backup": {
-    "title": "Kun Visual Novel Forum Backup Site (Activated)",
-    "details": "Kun Visual Novel Forum Backup Site. Since the main domain is inaccessible in mainland China, the backup domain has been activated. However, it is possible that images cannot be uploaded on the backup domain."
+    "title": "Kun Visual Novel Forum Backup Site (Not Activated)",
+    "details": "Kun Visual Novel Forum Backup Site. The main domain is currently accessible, so the backup domain is not activated. We will only enable this backup domain when the main domain becomes unreachable."
   },
   "sticker": {
     "title": "Kun Visual Novel Stickers",
@@ -33,5 +33,17 @@
   "nav": {
     "title": "Kun Visual Novel Navigation",
     "details": "This website! A completely open-source navigation site! You can visit all Kun Visual Novel subsites!"
+  },
+  "oauth": {
+    "title": "Kun Visual Novel OAuth System",
+    "details": "Kun Visual Novel OAuth System unifies all user accounts across Kun Visual Novel, providing the best experience for one-click login to every site under Kun Visual Novel!"
+  },
+  "wiki": {
+    "title": "Kun Visual Novel Wiki (Encyclopedia)",
+    "details": "Kun Visual Novel Wiki is the most powerful openly-editable Galgame wiki in the world, and currently the most comprehensive Galgame encyclopedia, covering all information on over 100,000 Galgames / visual novels, including scripts, covers, game titles, voice actors, screenshots, tags, studios, engines, and everything else you can think of!"
+  },
+  "kunui": {
+    "title": "Kun Visual Novel UI Library (KunUI)",
+    "details": "KunUI is a modern headless UI component library designed for ACGN websites. It currently supports Vue / Nuxt (React, Next.js, SolidJS, and SolidStart planned): top-tier SSR support, ultra-low latency, zero external dependencies, and production-ready, helping you ship web apps faster."
   }
 }

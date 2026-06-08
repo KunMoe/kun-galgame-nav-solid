@@ -15,8 +15,8 @@
     "details": "世界上最萌的 Galgame 论坛! 现阶段世界上最先进的 Galgame 资源发布网站! 永远不会有广告! 永远免费! Galgame 下载, Galgame 资源网站"    
   },
   "backup": {
-    "title": "鲲 Galgame 论坛备用网址 (已启用)",
-    "details": "鲲 Galgame 论坛备用网址。由于主域名在中国大陆不可访问，备用域名已激活，但是备用域名可能上传不了图片"
+    "title": "鲲 Galgame 论坛备用网址 (未启用)",
+    "details": "鲲 Galgame 论坛备用网址。当前主域名可正常访问，备用域名暂未启用；仅当主域名不可访问时，我们才会启用此备用域名"
   },
   "sticker": {
     "title":"鲲 Galgame 表情包",
@@ -33,5 +33,17 @@
   "nav": {
     "title": "鲲 Galgame 导航",
     "details": "就是本网站! 完全开源的导航站！ 可以前往鲲 Galgame 所有子网站！"
+  },
+  "oauth": {
+    "title": "鲲 Galgame OAuth 系统",
+    "details": "鲲 Galgame OAuth 系统，统一鲲 Galgame 所有用户账户，为用户一键登录 鲲 Galgame 下的所有网站提供最良好的体验！"
+  },
+  "wiki": {
+    "title": "鲲 Galgame Wiki (鲲 Galgame 百科)",
+    "details": "鲲 Galgame 百科是世界上最强大的可开放编辑的 Galgame Wiki，它是目前世界上最全的 Galgame 百科全书，涵盖了超过十万部 Galgame / 视觉小说 的全部信息，包括剧本，封面，游戏名，声优，截图，标签，制作会社，制作引擎等等一切你能想到的内容！"
+  },
+  "kunui": {
+    "title": "鲲 Galgame UI 组件库 (KunUI)",
+    "details": "KunUI —— 专为 ACGN 网站设计的现代无头 UI 组件库。当前支持 Vue / Nuxt（React、Next.js、SolidJS、SolidStart 规划中）：极致 SSR 支持、超低延迟、零外部依赖、生产就绪，助你更快交付 Web 应用。"
   }
 }
