@@ -6,10 +6,8 @@ import {
   Show
 } from 'solid-js'
 import { Dynamic } from 'solid-js/web'
-import { useRipple } from './ripple/useRipple'
 import { cn } from '~/utils/cn'
 import { withDefaults } from '~/utils/withDefaults'
-import { KunRipple } from './ripple/Ripple'
 import type { KunUIColor } from './type'
 
 export interface KunCardProps extends JSX.HTMLAttributes<HTMLDivElement> {
@@ -61,13 +59,7 @@ export const KunCard: ParentComponent<KunCardProps> = (props) => {
     'onClick'
   ])
 
-  const { ripples, createRipple } = useRipple()
-
   const handleKunCardClick = (event: MouseEvent) => {
-    if (local.isPressable) {
-      createRipple(event)
-    }
-
     if (typeof local.onClick === 'function') {
       ;(local.onClick as (e: MouseEvent) => void)(event)
     }
@@ -142,10 +134,6 @@ export const KunCard: ParentComponent<KunCardProps> = (props) => {
 
       <Show when={local.footer}>
         <div class="bg-default-100 border-t px-3 py-2">{local.footer}</div>
-      </Show>
-
-      <Show when={local.isPressable}>
-        <KunRipple ripples={ripples()} />
       </Show>
     </Dynamic>
   )

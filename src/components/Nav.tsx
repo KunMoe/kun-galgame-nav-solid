@@ -1,6 +1,5 @@
 import { Show, type Accessor } from 'solid-js'
 import { KunLink } from '~/components/kun/KunLink'
-import { KunButton } from '~/components/kun/KunButton'
 import { KunImage } from '~/components/kun/KunImage'
 import {
   MdiGitHub,
@@ -54,15 +53,12 @@ export default function Nav(props: NavProps) {
 
       <div class="flex items-center gap-2">
         {/* Theme cycle: light -> dark -> system */}
-        <KunButton
-          isIconOnly
-          variant="light"
-          color="default"
-          rounded="lg"
-          class="text-xl"
+        <button
+          type="button"
           title={themeTitle()}
           aria-label={themeTitle()}
           onClick={() => props.setTheme(nextTheme[props.theme()])}
+          class="text-default-600 hover:bg-default-500/15 flex cursor-pointer items-center justify-center rounded-lg p-2 text-xl transition-colors"
         >
           <Show when={props.theme() === 'kun-light'}>
             <UilSun />
@@ -73,7 +69,7 @@ export default function Nav(props: NavProps) {
           <Show when={props.theme() === 'kun-system'}>
             <UilMonitor />
           </Show>
-        </KunButton>
+        </button>
 
         {/* Language toggle: zh <-> en (path based) */}
         <KunLink
