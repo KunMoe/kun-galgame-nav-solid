@@ -43,7 +43,7 @@ const subSites: KunSite[] = [
   },
   {
     key: 'documents',
-    link: 'https://docs.kungal.nextmoe.dev',
+    link: 'https://docs-kungal.nextmoe.dev/',
     githubLink: 'https://github.com/KUN1007/soft.moe'
   },
   {
@@ -61,8 +61,8 @@ const subSites: KunSite[] = [
   },
   {
     key: 'down',
-    link: 'https://down.kungal.com',
-    githubLink: 'https://github.com/KUN1007/kun-galgame-down-page'
+    link: 'https://counter.kungal.com/',
+    githubLink: 'https://github.com/kungal/kun-galgame-counter'
   },
   {
     key: 'nav',
