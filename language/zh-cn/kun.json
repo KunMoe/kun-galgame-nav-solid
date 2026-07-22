@@ -12,14 +12,14 @@
   "loli": "请给我一只萝莉！",
   "forum": {
     "title": "鲲 Galgame 论坛",
-    "details": "世界上最萌的 Galgame 论坛! 现阶段世界上最先进的 Galgame 资源发布网站! 永远不会有广告! 永远免费! Galgame 下载, Galgame 资源网站"    
+    "details": "世界上最萌的 Galgame 论坛! 现阶段世界上最先进的 Galgame 资源发布网站! 永远不会有广告! 永远免费! Galgame 下载, Galgame 资源网站"
   },
   "backup": {
     "title": "鲲 Galgame 论坛备用网址 (未启用)",
     "details": "鲲 Galgame 论坛备用网址。当前主域名可正常访问，备用域名暂未启用；仅当主域名不可访问时，我们才会启用此备用域名"
   },
   "sticker": {
-    "title":"鲲 Galgame 表情包",
+    "title": "鲲 Galgame 表情包",
     "details": "Galgame 表情包网站, 鲲 Galgame, Galgame 表情包下载, Galgame, 表情包, 下载, Visual Novel Stickers Website"
   },
   "documents": {
@@ -37,10 +37,6 @@
   "oauth": {
     "title": "鲲 Galgame OAuth 系统",
     "details": "鲲 Galgame OAuth 系统，统一鲲 Galgame 所有用户账户，为用户一键登录 鲲 Galgame 下的所有网站提供最良好的体验！"
-  },
-  "wiki": {
-    "title": "鲲 Galgame Wiki (鲲 Galgame 百科)",
-    "details": "鲲 Galgame 百科是世界上最强大的可开放编辑的 Galgame Wiki，它是目前世界上最全的 Galgame 百科全书，涵盖了超过十万部 Galgame / 视觉小说 的全部信息，包括剧本，封面，游戏名，声优，截图，标签，制作会社，制作引擎等等一切你能想到的内容！"
   },
   "kunui": {
     "title": "鲲 Galgame UI 组件库 (KunUI)",

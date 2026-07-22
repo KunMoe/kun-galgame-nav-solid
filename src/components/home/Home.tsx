@@ -10,7 +10,6 @@ type SiteKey =
   | 'sticker'
   | 'documents'
   | 'oauth'
-  | 'wiki'
   | 'kunui'
   | 'down'
   | 'nav'
@@ -49,10 +48,6 @@ const subSites: KunSite[] = [
   {
     key: 'oauth',
     link: 'https://oauth.kungal.com/'
-  },
-  {
-    key: 'wiki',
-    link: 'https://wiki.kungal.com/'
   },
   {
     key: 'kunui',

@@ -38,10 +38,6 @@
     "title": "Kun Visual Novel OAuth System",
     "details": "Kun Visual Novel OAuth System unifies all user accounts across Kun Visual Novel, providing the best experience for one-click login to every site under Kun Visual Novel!"
   },
-  "wiki": {
-    "title": "Kun Visual Novel Wiki (Encyclopedia)",
-    "details": "Kun Visual Novel Wiki is the most powerful openly-editable Galgame wiki in the world, and currently the most comprehensive Galgame encyclopedia, covering all information on over 100,000 Galgames / visual novels, including scripts, covers, game titles, voice actors, screenshots, tags, studios, engines, and everything else you can think of!"
-  },
   "kunui": {
     "title": "Kun Visual Novel UI Library (KunUI)",
     "details": "KunUI is a modern headless UI component library designed for ACGN websites. It currently supports Vue / Nuxt (React, Next.js, SolidJS, and SolidStart planned): top-tier SSR support, ultra-low latency, zero external dependencies, and production-ready, helping you ship web apps faster."
