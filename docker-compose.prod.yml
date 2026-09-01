@@ -1,6 +1,6 @@
 # kun-galgame-nav — PRODUCTION compose (Dokploy + GHCR prebuilt image).
 #
-# Same conventions as kun-galgame-infra/docker-compose.prod.yml:
+# Same conventions as nextmoe-infra/docker-compose.prod.yml:
 #   1. `image: ghcr.io/kunmoe/kun-galgame-nav` — NOT `build:`. CI builds+pushes; Dokploy PULLS.
 #   2. `expose:` (container-network only) not `ports:` — Traefik routes internally.
 #   3. network = `dokploy-network` (external) — shared with the other Dokploy apps.

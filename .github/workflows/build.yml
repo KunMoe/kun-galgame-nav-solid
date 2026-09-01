@@ -1,5 +1,5 @@
 # Build the nav image and push to GHCR, then trigger a Dokploy redeploy.
-# Same shape as kun-galgame-infra/.github/workflows/build.yml, single image.
+# Same shape as nextmoe-infra/.github/workflows/build.yml, single image.
 #
 # The site bakes no browser-facing config (links are literal), so there are no
 # build-args here — just build the Dockerfile and push.

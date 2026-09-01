@@ -1,7 +1,7 @@
 # 鲲 Galgame 导航页 · 部署
 
 > 线上域名:**`nav.kungal.org`**。
-> 与 `kun-galgame-infra` 同一套部署惯例:**CI 构建 → 推 GHCR → Dokploy 拉预构建镜像**,Dokploy 内置 **Traefik** 反代 + 自动 Let's Encrypt 证书。服务器开荒 / Dokploy 安装 / 隐藏源站等**共用步骤**见 infra 的 [`docs/deploy/`](../../kun-galgame-infra/docs/deploy/)(`SERVER-SETUP.md`、`QUICKSTART.md`、`12-dokploy.md`、`13-registry-ci.md`)。
+> 与 `nextmoe-infra` 同一套部署惯例:**CI 构建 → 推 GHCR → Dokploy 拉预构建镜像**,Dokploy 内置 **Traefik** 反代 + 自动 Let's Encrypt 证书。服务器开荒 / Dokploy 安装 / 隐藏源站等**共用步骤**见 infra 的 [`docs/deploy/`](../../nextmoe-infra/docs/deploy/)(`SERVER-SETUP.md`、`QUICKSTART.md`、`12-dokploy.md`、`13-registry-ci.md`)。
 
 ## 0 · 这是什么
 
