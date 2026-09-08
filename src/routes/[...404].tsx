@@ -1,20 +1,18 @@
-import { createMemo } from 'solid-js'
 import { Title } from '@solidjs/meta'
 import { KunCard } from '~/components/kun/KunCard'
 import { KunLink } from '~/components/kun/KunLink'
 import { useI18n } from '~/i18n'
 
-const randomNum = (min: number, max: number) =>
-  Math.floor(Math.random() * (max - min + 1)) + min
+// A same-origin static asset, not a remote sticker. This was
+// `sticker.kungal.com/stickers/KUNgal{1-5}/{1-80}.webp` picked at random --
+// an address for a position in a collection on a site this app does not own,
+// which 404s today because that site stopped serving static files. A 404 page
+// illustrated with a broken image is the worst place for it. The pick was
+// also random rather than derived, so SSR and the client disagreed.
+const KUN_NOT_FOUND_IMAGE = '/kun-null.webp'
 
 export default function NotFound() {
   const { t, localePath } = useI18n()
-
-  const stickerLink = createMemo(() => {
-    const pack = randomNum(1, 5)
-    const sticker = randomNum(1, 80)
-    return `https://sticker.kungal.com/stickers/KUNgal${pack}/${sticker}.webp`
-  })
 
   return (
     <main class="flex min-h-[calc(100lvh-4rem)] items-center justify-center p-4">
@@ -27,7 +25,7 @@ export default function NotFound() {
       >
         <h1 class="text-ren text-5xl font-bold">404</h1>
         <img
-          src={stickerLink()}
+          src={KUN_NOT_FOUND_IMAGE}
           alt="404"
           class="size-40 object-contain"
         />
