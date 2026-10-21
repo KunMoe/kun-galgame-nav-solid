@@ -22,7 +22,7 @@
     "vinxi": "^0.5.6"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24.22.1"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
